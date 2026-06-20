@@ -1,0 +1,433 @@
+.top-container {
+    background-color:#e4f9f5; 
+    max-height: 700px;
+    position: relative;
+}
+.top-title{
+    display: block;
+    padding-top: 100px;
+    padding-bottom: 200px;
+    text-align: center;
+}
+h1{
+    font-size: 5.625rem;
+    color: #66bfbf;
+    font-family: "Sacramento", cursive;
+}
+h2{
+    font-size: 2.5rem;
+    color: #66bfbf;
+    font-family: "Montserrat", sans-serif;
+}
+
+h3{
+    font-size: 1rem;
+    color: #66bfbf;
+    font-family: "Montserrat", sans-serif;
+}
+
+.main-container{
+    background-color: white;
+    text-align: center;
+}
+.main-title{
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.top-image{
+    margin-bottom: 20px;
+}
+.top-image img{
+    width: 200px;
+    height: 250px;
+    border-radius: 50%;
+}
+.main-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.main-section img{
+    width: 150px;
+    height: 150px;
+}
+
+.main-text{
+    display: block;
+    margin-left: 20px;
+    text-align: left;
+}
+.main-text p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+hr{
+    margin: 50px auto;
+    max-width: 400px;
+    border: 0;
+    border-top: 1px solid gray;
+}
+
+button{
+    background-color: #66bfbf;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+.main-footer{
+    background-color:#66bfbf; 
+    padding: 20px 0;
+    text-align: center;
+}
+li{
+    margin: 0 15px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+li a {
+    color: white;
+    text-decoration: none;
+}
+li a:hover {
+    text-decoration: underline;
+}
+@media(max-width: 480px){
+    ul{
+        display: block;
+        text-align: center;
+    }
+    .main-section{
+        display: block;
+        margin-bottom: 20px;
+    }
+    h1{
+        font-size: 2.5rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+}
+
+/* --- SECTION MEINE PROJEKTE --- */
+#meine-projekte {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+}
+
+#meine-projekte h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+    color: #66bfbf; /* Modifié : Bleu -> Vert */
+}
+
+.main-section {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 4rem;
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.main-section:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.main-section img {
+    width: 45%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 6px;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.main-text {
+    width: 55%;
+}
+
+.main-text h3 {
+    font-size: 1.6rem;
+    color: #66bfbf; /* Modifié : Bleu -> Vert */
+    margin-bottom: 0.5rem;
+}
+
+.project-tech {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #6c757d;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.project-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #495057;
+    margin-bottom: 1.5rem;
+}
+
+.btn-github {
+    display: inline-block;
+    padding: 0.65rem 1.3rem;
+    background-color: #24292e;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-github:hover {
+    background-color: #444;
+    transform: translateY(-2px);
+}
+
+/* --- SECTION MEIN TECH-STACK --- */
+#tech-stack {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+}
+
+.stack-title-container h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+    color: #66bfbf; /* Modifié : Gris foncé -> Vert */
+}
+
+.stack-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.stack-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stack-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+}
+
+.qa-card {
+    border-left: 4px solid #66bfbf; /* Modifié : Bleu -> Vert */
+}
+
+.stack-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 1.2rem;
+    font-weight: 600;
+}
+
+.badges-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+.tech-badge {
+    background-color: #f1f3f5;
+    color: #495057;
+    font-size: 0.85rem;
+    font-weight: 500;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    border: 1px solid #dee2e6;
+    transition: background-color 0.2s;
+}
+
+.tech-badge:hover {
+    background-color: #e4f9f5; /* Modifié : Gris clair -> Vert très clair (fond du site) */
+    color: #66bfbf; /* Modifié : Bleu -> Vert */
+    border-color: #66bfbf;
+}
+
+/* --- SECTION MEINE STÄRKEN --- */
+#meine-staerken {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+}
+
+.staerken-title-container h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+    color: #66bfbf; /* Modifié : Gris foncé -> Vert */
+}
+
+.staerken-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.staerke-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.staerke-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+
+.staerke-icon {
+    font-size: 2rem;
+    background: #e4f9f5; /* Modifié : Gris -> Vert très clair */
+    padding: 0.5rem;
+    border-radius: 50%;
+    line-height: 1;
+}
+
+.staerke-card h3 {
+    font-size: 1.3rem;
+    color: #66bfbf; /* Modifié : Bleu -> Vert */
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.staerke-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #495057;
+    margin: 0;
+}
+
+/* --- SECTION ÜBER MICH --- */
+#ueber-mich {
+    max-width: 800px; 
+    margin: 0 auto;
+    padding: 3rem 1rem;
+}
+
+.about-title-container h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+    color: #66bfbf; /* Modifié : Gris foncé -> Vert */
+}
+
+.about-content {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 2.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+}
+
+.about-text h3 {
+    font-size: 1.6rem;
+    color: #66bfbf; /* Modifié : Bleu -> Vert */
+    margin-bottom: 1.5rem;
+}
+
+.about-text p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #495057;
+    margin-bottom: 1.2rem;
+}
+
+.about-info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #dee2e6;
+}
+
+.info-item {
+    font-size: 0.95rem;
+    color: #495057;
+}
+
+.info-item strong {
+    color: #212529;
+}
+
+/* --- RESPONSIVE MEDIA QUERIES --- */
+@media (max-width: 768px) {
+    .staerken-grid {
+        grid-template-columns: 1fr; 
+    }
+    
+    .staerke-card {
+        padding: 1.5rem;
+        flex-direction: column; 
+        gap: 0.8rem;
+    }
+    
+    .staerken-title-container h2,
+    .stack-title-container h2,
+    .about-title-container h2,
+    #meine-projekte h2 {
+        font-size: 1.8rem;
+    }
+
+    .main-section, .main-section:nth-child(even) {
+        flex-direction: column; 
+        gap: 1.5rem;
+        padding: 1rem;
+    }
+
+    .main-section img, .main-text {
+        width: 100%; 
+    }
+
+    .about-content {
+        padding: 1.5rem;
+    }
+
+    .about-text h3 {
+        font-size: 1.4rem;
+    }
+    
+    .about-info-grid {
+        grid-template-columns: 1fr; 
+        gap: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .stack-grid {
+        grid-template-columns: 1fr; 
+    }
+}
